@@ -1,0 +1,13 @@
+.transaction {
+  text-align: center;
+  width: calc(100% / 3);
+}
+
+.info {
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.transaction:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}

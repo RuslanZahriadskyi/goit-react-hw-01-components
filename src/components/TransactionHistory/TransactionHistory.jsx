@@ -1,5 +1,5 @@
 import s from './TransactionHistory.module.css';
-import TransactionsList from './TransactionsList/TransactionsList';
+import TransactionsList from './TransactionsList';
 
 function TransactionHistory({ items }) {
   return (

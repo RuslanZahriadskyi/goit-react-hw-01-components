@@ -1,6 +1,6 @@
 import s from './Statistics.module.css';
 import PropTypes from 'prop-types';
-import StatisticsList from './StatisticsList/StatisticsList';
+import StatisticsList from './StatisticsList';
 
 function Statistics({ title = '', items }) {
   return (

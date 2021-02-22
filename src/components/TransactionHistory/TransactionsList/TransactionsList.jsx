@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 function TransactionsList({ transactions }) {
   return (
     <tbody>
-      {transactions.map(transaction => (
-        <tr key={transaction.id} className={s.transaction}>
-          <td className={s.info}>{transaction.type}</td>
-          <td className={s.info}>{transaction.amount}</td>
-          <td className={s.info}>{transaction.currency}</td>
+      {transactions.map(({ type, amount, currency, id }) => (
+        <tr key={id} className={s.transaction}>
+          <td className={s.info}>{type}</td>
+          <td className={s.info}>{amount}</td>
+          <td className={s.info}>{currency}</td>
         </tr>
       ))}
     </tbody>

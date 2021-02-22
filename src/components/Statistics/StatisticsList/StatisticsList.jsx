@@ -11,14 +11,14 @@ function getRandomColor() {
 function StatisticsList({ items }) {
   return (
     <ul className={s.statList}>
-      {items.map(item => (
+      {items.map(({ id, label, percentage }) => (
         <li
           className={s.item}
-          key={item.id}
+          key={id}
           style={{ backgroundColor: getRandomColor(255) }}
         >
-          <span className={s.label}>{item.label}</span>
-          <span className={s.percentage}>{item.percentage}%</span>
+          <span className={s.label}>{label}</span>
+          <span className={s.percentage}>{percentage}%</span>
         </li>
       ))}
     </ul>

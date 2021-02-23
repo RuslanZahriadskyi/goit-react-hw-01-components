@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import StatisticsList from './StatisticsList';
 
 function Statistics({ title, items }) {
+  console.log(title);
   return (
     <section className={s.section}>
       {title && <h2 className={s.title}>{title}</h2>}
